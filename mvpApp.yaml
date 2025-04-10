@@ -1,0 +1,679 @@
+type: collection.insomnia.rest/5.0
+name: Collections
+meta:
+  id: wrk_6c24d6d7b372491fb85d9348221a2d26
+  created: 1744227761480
+  modified: 1744227761480
+collection:
+  - name: Users
+    meta:
+      id: fld_62413faa56d0454e9348b6a9bcf9040d
+      created: 1744260081157
+      modified: 1744260081157
+      sortKey: -1744260081157
+    children:
+      - url: http://localhost:3050/api/v1/users
+        name: Get users
+        meta:
+          id: req_9732b700f55b4978a91cff01e474b857
+          created: 1744244189317
+          modified: 1744265487821
+          isPrivate: false
+          sortKey: -1744260090267
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor3",
+            	"password":"1234",
+            	"firstName":"jose",
+            	"lastName":"cor"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjYyOTcxLCJleHAiOjE3NDQyNjM1NzF9.ay4Rz1dOAFmIHbAjzHpicyq0BENOx1JzGt09ihzbblM
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/users/1
+        name: Get user by id
+        meta:
+          id: req_662c30a798ba4e35a8f83d48716069fe
+          created: 1744265442042
+          modified: 1744265490994
+          isPrivate: false
+          sortKey: -1744249083040.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor3",
+            	"password":"1234",
+            	"firstName":"jose",
+            	"lastName":"cor"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjYyOTcxLCJleHAiOjE3NDQyNjM1NzF9.ay4Rz1dOAFmIHbAjzHpicyq0BENOx1JzGt09ihzbblM
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/users
+        name: Register user
+        meta:
+          id: req_9082eaf7e0864245afd1fa177b351566
+          created: 1744265474774
+          modified: 1744265570004
+          isPrivate: false
+          sortKey: -1744238075814.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor3",
+            	"password":"1234",
+            	"firstName":"jose",
+            	"lastName":"cor"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjYyOTcxLCJleHAiOjE3NDQyNjM1NzF9.ay4Rz1dOAFmIHbAjzHpicyq0BENOx1JzGt09ihzbblM
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/users
+        name: Update user
+        meta:
+          id: req_b71d719206b1407797b19dd940c61ee6
+          created: 1744265563439
+          modified: 1744265585236
+          isPrivate: false
+          sortKey: -1744205054135.75
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor3",
+            	"password":"1234",
+            	"firstName":"jose",
+            	"lastName":"cor"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjYyOTcxLCJleHAiOjE3NDQyNjM1NzF9.ay4Rz1dOAFmIHbAjzHpicyq0BENOx1JzGt09ihzbblM
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/users/1
+        name: Change user state
+        meta:
+          id: req_4c1380bee72340f8a0c1cc6f25faa6f0
+          created: 1744265611260
+          modified: 1744265616069
+          isPrivate: false
+          sortKey: -1744188543296.375
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor3",
+            	"password":"1234",
+            	"firstName":"jose",
+            	"lastName":"cor"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjYyOTcxLCJleHAiOjE3NDQyNjM1NzF9.ay4Rz1dOAFmIHbAjzHpicyq0BENOx1JzGt09ihzbblM
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Authentication
+    meta:
+      id: fld_cc95980fa0164ae8b68976fc888515a6
+      created: 1744260103642
+      modified: 1744260103642
+      sortKey: -1744260103642
+    children:
+      - url: http://localhost:3050/api/v1/auth/generateToken
+        name: Generate token
+        meta:
+          id: req_f5dd13a395ff4cbdbdb0123b081765b4
+          created: 1744228091474
+          modified: 1744262970695
+          isPrivate: false
+          sortKey: -1744260106108
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"username":"jaycor1",
+            	"password":"1234"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Products
+    meta:
+      id: fld_fb4b90deec024b7083fdd9b891d8e3ef
+      created: 1744260117628
+      modified: 1744260117628
+      sortKey: -1744260117628
+    children:
+      - url: http://localhost:3050/api/v1/products
+        name: Get all products
+        meta:
+          id: req_585824ab2a994c7aac0f5feca23879ab
+          created: 1744261777997
+          modified: 1744265025759
+          isPrivate: false
+          sortKey: -1744261777997
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY0NTU3LCJleHAiOjE3NDQyNjUxNTd9.DGs4XnGcXNS56nBzG720s_D1JTo5B97f5RMBeEhcdks
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/4
+        name: Get product by id
+        meta:
+          id: req_eddb1d6658e14567918fa154326b3c50
+          created: 1744263095737
+          modified: 1744264567665
+          isPrivate: false
+          sortKey: -1744260942052.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY0NTU3LCJleHAiOjE3NDQyNjUxNTd9.DGs4XnGcXNS56nBzG720s_D1JTo5B97f5RMBeEhcdks
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products
+        name: Create product
+        meta:
+          id: req_4e13c1f0c1d94c9cb0a1d8606130d9e4
+          created: 1744264141983
+          modified: 1744264175955
+          isPrivate: false
+          sortKey: -1744260524080.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "productName": "Wireless Headphones",
+              "categoryId": 2,
+              "price": 79900,
+              "tagIds": [1, 3]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY0MDI4LCJleHAiOjE3NDQyNjQ2Mjh9.mytekJpa3TTy7y33Zx377eFKpUUqlGUDL5ZzP_eICCc
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products
+        name: Update product
+        meta:
+          id: req_8711ad6f16a4476a98c9c705f10f72fc
+          created: 1744264250693
+          modified: 1744264884350
+          isPrivate: false
+          sortKey: -1744260315094.125
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "productName": "Wireless Headphones",
+              "categoryId": 1,
+              "price": 79900,
+              "tagIds": [1]
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY0NTU3LCJleHAiOjE3NDQyNjUxNTd9.DGs4XnGcXNS56nBzG720s_D1JTo5B97f5RMBeEhcdks
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/1
+        name: Change product state
+        meta:
+          id: req_0d06e2a5aa4e4559905591fd606f8157
+          created: 1744264931474
+          modified: 1744265546809
+          isPrivate: false
+          sortKey: -1744260314994.125
+        method: PUT
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY1MjY5LCJleHAiOjE3NDQyNjU4Njl9.rbS1i2zH78kCUWTD24JlL0dTiXF7_2EwUsQu0fHB_FM
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Product Category
+    meta:
+      id: fld_da795df34470468eb92676d878f186d5
+      created: 1744260130944
+      modified: 1744260130944
+      sortKey: -1744260130944
+    children:
+      - url: http://localhost:3050/api/v1/products/categories/1
+        name: Get product category
+        meta:
+          id: req_7014b1656d3248598f13c7c145ff768c
+          created: 1744266848916
+          modified: 1744268035632
+          isPrivate: false
+          sortKey: -1744266859887
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/categories
+        name: Get product categories
+        meta:
+          id: req_cda0f455e16340fe80a27ead35957780
+          created: 1744266903385
+          modified: 1744268039851
+          isPrivate: false
+          sortKey: -1744264318942
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/categories
+        name: Create product category
+        meta:
+          id: req_fb358df6b222441b8857b16d03819bdb
+          created: 1744266946877
+          modified: 1744268044349
+          isPrivate: false
+          sortKey: -1744263048469.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            
+            {
+              "categoryName": "Food"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/categories
+        name: Update product category
+        meta:
+          id: req_7cc318086ef24729b0c9a9f6e0f3e0f6
+          created: 1744267006743
+          modified: 1744269075638
+          isPrivate: false
+          sortKey: -1744262413233.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"id":4,
+              "categoryName": "Food"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/categories/1
+        name: Change product category state
+        meta:
+          id: req_d3d42190dcf74e5682431c6be773aa11
+          created: 1744267027009
+          modified: 1744268186422
+          isPrivate: false
+          sortKey: -1744262095615.125
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            
+            {
+              "categoryName": "Food"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Product tags
+    meta:
+      id: fld_a064e2fce69f47d8a6a1236c3fad8b38
+      created: 1744267128510
+      modified: 1744267128510
+      sortKey: -1744260124286
+    children:
+      - url: http://localhost:3050/api/v1/products/tags/1
+        name: Get product tag
+        meta:
+          id: req_3520a1e3a1bd42efade77b22358aeebe
+          created: 1744267128511
+          modified: 1744268258339
+          isPrivate: false
+          sortKey: -1744266859887
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/tags
+        name: Get product tags
+        meta:
+          id: req_fe56971436cd4ca2b09caf2846f438c7
+          created: 1744267128511
+          modified: 1744268547352
+          isPrivate: false
+          sortKey: -1744264318942
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/tags
+        name: Create product tag
+        meta:
+          id: req_0ee2773eb4934998abf5ebdc3c4debbd
+          created: 1744267128512
+          modified: 1744268557500
+          isPrivate: false
+          sortKey: -1744263048469.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            
+            {
+              "name": "Gaming"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/tags
+        name: Update product tag
+        meta:
+          id: req_79cd54760a5344f5a9d70712a0037a2e
+          created: 1744267128512
+          modified: 1744268621618
+          isPrivate: false
+          sortKey: -1744262413233.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            
+            {
+              "name": "Gaming"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4MDI5LCJleHAiOjE3NDQyNjg2Mjl9.fKzeN8tGcVt2ged_xDlaflGuxLAggmshx77f_3hQ-aY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3050/api/v1/products/tags/1
+        name: Change product tag state
+        meta:
+          id: req_0cdc13226a9b4ea6a72d2154897a3773
+          created: 1744267128513
+          modified: 1744268654532
+          isPrivate: false
+          sortKey: -1744262095615.125
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "name": "Gaming Updated"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqYXljb3IxIiwiaWF0IjoxNzQ0MjY4NjQ3LCJleHAiOjE3NDQyNjkyNDd9.4yifmrvZKemfOolOSiB7PbxRznk6YUMd67NnyelVerM
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_0afa0bcf3cbd4145f17cf8dbdd7e1d1a2709a3cf
+    created: 1744227761482
+    modified: 1744227761482
+environments:
+  name: Base Environment
+  meta:
+    id: env_0afa0bcf3cbd4145f17cf8dbdd7e1d1a2709a3cf
+    created: 1744227761481
+    modified: 1744227761481
+    isPrivate: false

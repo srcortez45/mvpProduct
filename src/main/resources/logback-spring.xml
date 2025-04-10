@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Define a log pattern -->
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"/>
+
+    <!-- USER SERVICE LOGS -->
+    <appender name="USER_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/user.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- PRODUCT SERVICE LOGS -->
+    <appender name="PRODUCT_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/product.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+    
+     <!-- AUTH SERVICE LOGS -->
+    <appender name="AUTH_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/auth.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- GENERAL CONSOLE LOGGING -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Logger for UserService -->
+    <logger name="com.challenge.mvp.users" level="DEBUG" additivity="false">
+        <appender-ref ref="USER_FILE"/>
+    </logger>
+
+    <!-- Logger for ProductService -->
+    <logger name="com.challenge.mvp.products" level="DEBUG" additivity="false">
+        <appender-ref ref="PRODUCT_FILE"/>
+    </logger>
+    
+        <!-- Logger for AuthService -->
+    <logger name="com.challenge.mvp.authentication" level="DEBUG" additivity="false">
+        <appender-ref ref="AUTH_FILE"/>
+    </logger>
+
+    <!-- Root logger -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
